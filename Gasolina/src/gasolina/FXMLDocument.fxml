@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Scene?>
+<?import javafx.stage.Stage?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gasolina.FXMLDocumentController">
+    <children>
+        <Label layoutX="20.0" layoutY="10.0" text="Cidade de Origem:" style="-fx-text-fill: #00796B; -fx-font-size: 14px;" />
+        <ComboBox fx:id="comboBoxFrom" layoutX="20.0" layoutY="30.0" prefWidth="200.0" style="-fx-background-color: #B2EBF2; -fx-border-color: #00796B;" />
+        
+        <Label layoutX="20.0" layoutY="70.0" text="Cidade de Destino:" style="-fx-text-fill: #00796B; -fx-font-size: 14px;" />
+        <ComboBox fx:id="comboBoxTo" layoutX="20.0" layoutY="90.0" prefWidth="200.0" style="-fx-background-color: #B2EBF2; -fx-border-color: #00796B;" />
+        
+        <Button layoutX="18.0" layoutY="129.0" onAction="#calculate" prefHeight="25.0" prefWidth="340.0" text="Calcular" style="-fx-background-color: #00796B; -fx-text-fill: white;" />
+        
+        <Label layoutX="20.0" layoutY="170.0" prefHeight="17.0" prefWidth="150.0" text="Distância (km):" style="-fx-text-fill: #00796B; -fx-font-size: 14px;" />
+        <Label fx:id="lblDistance" layoutX="20.0" layoutY="190.0" style="-fx-font-weight: bold; -fx-text-fill: #004D40;" wrapText="true" />
+        
+        <Label layoutX="20.0" layoutY="220.0" text="Custo (R$):" style="-fx-text-fill: #00796B; -fx-font-size: 14px;" />
+        <Label fx:id="lblCost" layoutX="20.0" layoutY="240.0" style="-fx-font-weight: bold; -fx-text-fill: #004D40;" wrapText="true" />
+        
+        <Label layoutX="20.0" layoutY="270.0" text="Consumo (L/100km):" style="-fx-text-fill: #00796B; -fx-font-size: 14px;" />
+        <Label fx:id="lblConsumption" layoutX="20.0" layoutY="290.0" style="-fx-font-weight: bold; -fx-text-fill: #004D40;" wrapText="true" />
+    </children>
+</AnchorPane>
+
